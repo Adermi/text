@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.focus {
+    position: relative;
+    margin: 10px auto;
+    width: 730px;
+    height: 450px;
+    background-color: beige;
+    overflow: hidden;
+    
+}
+
+.focus:hover >div{
+    display: block;
+}
+
+.focus .splider_list {
+    position: relative;
+    width: 800%;
+    height: 100%;
+}
+
+.focus .splider_list li {
+    float: left;
+}
+
+.focus .splider_list li a {
+    display: block;
+    width: 730px;
+    height: 450px;
+}
+
+.focus .splider_list li img {
+    width: 100%;
+    height: 100%;
+}
+
+.splider_dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.splider_dots li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.current {
+    border: 3px solid black;
+}
+
+.arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: blanchedalmond;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.arrow:hover {
+    color: gold;
+    background-color: #000;
+}
